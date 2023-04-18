@@ -1,18 +1,26 @@
 # learn4haskell
 
-![Learn4Haskell](/images/HacktoberFest2020-Learn4Haskell-Banner.png)
+![Learn4Haskell](/images/HacktoberFest2021-Learn4Haskell-Banner.png)
+
+🚨 __Important notice: This course continues BAU even after Hacktoberfest__ 🚨
+
+You can find the results of Hacktoberfest 2020 for [Learn4Haskell](https://github.com/kowainik/learn4haskell) in the following blog post:
+
+ * [Brave New Hacktoberfest](https://kowainik.github.io/posts/hacktoberfest2020)
+
+<hr>
 
 It's the time of the year when thousand pull requests are starting to float in
 the air like a leaf on the wind 🍃
 
 It's Hacktoberfest! And we are happy to be part of this fantastic event.
 
-Usually, people are contributing to projects within the communities they are
-boiling in.
+Usually, people contribute to projects within the communities they spend most of their time
+already and don't try to go out of those boundaries.
 But why not use this time to learn something challenging, something fresh,
 something that you never had time for?
 
-You can get the benefits of Hacktoberfest while learning something new 
+You can get the benefits of Hacktoberfest while learning something new
 fascinating concepts – Functional Programming with Haskell.
 
 And we're here to help!
@@ -47,7 +55,7 @@ This works in the following way. When you decide to start the project, all you
 need to do is to fork the project. We have prepared 4 separate modules — chapters.
 Each part contains educational material and lots of examples that we provide in
 a simple form that doesn't require you to know anything about functional programming beforehand.
-Also, each chapter contains a number of exercises on everything that is
+Also, each chapter contains several exercises on everything that is
 explained by us. You can solve the tasks on your way and at the end open a PR to
 your fork with this chapter's solution and summon us (by shouting out our
 nicknames there). We would be happy to give you feedback on your progress,
@@ -59,11 +67,11 @@ are already familiar to you, feel free to skip onto the next one.
 If you would like to talk to us, you can even rely on PRs for the chapter you
 have questions about.
 
-Chapters are stuffed with information, but are aimed to be completed
+Chapters are stuffed with information but are aimed to be completed
 without additional resources. You may spend an evening per chapter, but we swear
 it's worth it!
 
-At the end of the course you should be able to independently create and read
+At the end of the course, you should be able to independently create and read
 basic Haskell code and understand Monads and other famous concepts of Functional
 Programming.
 
@@ -119,7 +127,7 @@ language newcomers who decide to work with this course.
 This course has many benefits upon completion. Check them out to be sure that it fits
 your expectations!
 
-The participation in this course would give you:
+Participation in this course would give you:
 
  * 4 Pull Requests required for Hacktoberfest completion
  * Basic knowledge of the most functional programming language
@@ -129,45 +137,45 @@ The participation in this course would give you:
  * Interesting challenges
  * Fun!
 
-Honestly this seems like a pretty rad deal!
+Honestly, this seems like a pretty rad deal!
 
-## So how do I get started?
+## How to get started
 
 Starting to learn Haskell with Learn4Haskell is a piece of cake!
 
 1. [Fork this repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
 2. :warning: Add the `hacktoberfest` topic to your fork. Otherwise, [your PRs won't count](https://hacktoberfest.digitalocean.com/hacktoberfest-update).
-3. Enable GitHub Actions for your fork repository.
+3. Enable GitHub Actions for your forked repository.
     * Visit: https://github.com/<YOUR_GITHUB_USERNAME>/learn4haskell/actions
 4. [Install the Haskell compiler](#installing-haskell).
 5. Open the `src/Chapter1.hs` file, and start learning and solving tasks!
 6. After you finish the first chapter (or any other chapter, or even if you are
    stuck in the middle), open
    [Pull Request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
-   __to your fork__ with the solution and mention @vrom911 and @chshersh and we
+   __to your fork__ with the solution and mention @vrom911 and I
    would be on our way for the review.
+
  > Note, that you should open a PR for your fork of this repo, not this repo.
- > Everyone has their own solutions to the included tasks, and they don't mix together
+ > Everyone has their solutions to the included tasks, and they don't mix together
  > well in one repo 🙂
 
-> However, if you find some bugs or problems in this repo, you can of
+> However, if you find some bugs or problems in this repo, you can
 > open a PR to Learn4Haskell directly. We appreciate any help and feedback!
 
 Learn4Haskell has 4 chapters that you can walk through and submit 4 pull requests to
-complete the Hacktoberfest event (or just for knowledge and your own enjoyment).
+complete the Hacktoberfest event (or just for knowledge and your enjoyment).
 
-So, you can start right now with forking. Following this will describe how you can
+So, you can start right now with forking. Following this we'll describe how you can
 install all the necessary items to be able to run this course locally.
 
 ### Installing Haskell
 
 If you're on Windows, install the `haskell-dev` and `make` packages [using Chocolatey](https://chocolatey.org/install).
+
 ```shell
 choco install haskell-dev make
 refreshenv
 ```
-
-Then, do [the workaround](https://www.stackage.org/blog/2020/08/ghc-8-10-2-windows-workaround) to alleviate a GHC 8.10.2 issue on Windows which prevents the test suite from building correctly.
 
 If you're on Linux or macOS, then the process is easy:
 
@@ -179,8 +187,8 @@ If you're on Linux or macOS, then the process is easy:
    terminal
 
     ```shell
-    ghcup install ghc 8.10.2
-    ghcup set ghc 8.10.2
+    ghcup install ghc 9.2.4
+    ghcup set ghc 9.2.4
     ghcup install cabal 3.2.0.0
     ```
 3. Run `cabal update` to fetch the latest info about Haskell packages.
@@ -192,14 +200,26 @@ If you don't have any IDE preferences, we recommend installing
 [Haskell plugin](https://marketplace.visualstudio.com/items?itemName=haskell.haskell).
 The mentioned plugin would give you everything required to immediately start coding with Haskell.
 
+### Gitpod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/kowainik/learn4haskell)
+
+[Gitpod](https://www.gitpod.io/) is a VSCode-based Web IDE.
+With it, you can get a Haskell environment out-of-the-box.
+It's free to use up to 50 hours per month.
+
+Just prepend `gitpod.io#` to your repo URL and you are ready to go.
+It will take some time to initialize the workspace for the first time it opens.
+It only keeps changes under `/workspace`, and it will be deleted after a period of inactivity unless it's pinned.
+
 ### How to develop
 
 The course assumes that you install Haskell tooling (GHC and Cabal), edit code
 in the corresponding chapters, run GHCi (Haskell interpreter, explained in the
 course) from the root of this project and load your chapters to check your code.
-Don't worry, each Chapter explains all the needed information!
+Don't worry, each chapter explains all the needed information!
 
-We also provide Makefile with commands to test your solutions locally with the included
+We also provide a Makefile with commands to test your solutions locally with the included
 prepared test-suite. We have also configured the CI using GitHub
 Actions on Learn4Haskell to check your answers at GitHub automatically!
 
@@ -219,17 +239,14 @@ Similar commands are provided for all chapters from One to Four.
 
 ## Who we are
 
-[Veronika (@vrom911)](https://vrom911.github.com/) and
-[Dmitrii (@chshersh)](https://kodimensional.dev/) are experienced Haskell developers.
-Together we drive this open source organisation —
+I am [Veronika (@vrom911)](https://vrom911.github.io/) and I drive this open source organisation —
 [Kowainik](https://kowainik.github.io/). We have a lot of open source projects
 and libraries in Haskell that are used in the Haskell community. We are also
 working on a lot of tutorials and guides in Haskell and mentoring people who are
-keen to learn Haskell as well. Moreover, Dmitrii has a few years of experience
-teaching Haskell courses in the university to CS students.
+keen to learn Haskell as well.
 
 We are passionate about Functional Programming and Haskell in particular. But at
-the same time we understand how difficult it can be to get into all these
+the same time, we understand how difficult it can be to get into all these
 ideas on your own. That is why we've decided to start this course to help
 newcomers. With the interactive learning process and live discussions we've included, Haskell
 will not be that scary. We will do our best so that it especially won't be the case
@@ -241,9 +258,8 @@ You can help us by supporting us on Ko-Fi or via GitHub sponsorship program:
 
 * [Kowainik Ko-Fi](https://ko-fi.com/kowainik)
 * [Veronika Romashkina via GitHub](https://github.com/sponsors/vrom911)
-* [Dmitrii Kovanikov via GitHub](https://github.com/sponsors/chshersh)
 
 
 We also appreciate any feedback on our course a lot! You can submit your
 feedback using the following form:
-* https://docs.google.com/forms/d/e/1FAIpQLScBVhLxq5CgGnAfIGUE-fCoOUqeGkDY2HXzbT7KV2jjLOsmjQ/viewform
+* [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLScBVhLxq5CgGnAfIGUE-fCoOUqeGkDY2HXzbT7KV2jjLOsmjQ/viewform)
